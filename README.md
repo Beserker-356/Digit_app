@@ -27,9 +27,17 @@
 
 ![Screenshot from 2024-03-25 23-06-08](https://github.com/Beserker-356/Digit_app/assets/141203631/144f18fd-1abc-4893-8073-ee52e5a2ee64)
 
-<p>2. Now, enter "1111" as OTP in the next page.</p>
+<p>2. Now, enter "1111" as OTP and click "Login".</p>
 
 ![Screenshot from 2024-03-25 23-06-21](https://github.com/Beserker-356/Digit_app/assets/141203631/6f37ff39-93e1-4768-8a11-b605c1a7df94)
+
+<p>3. You will be redirected to Home page</p>
+
+![Screenshot from 2024-03-25 23-06-34](https://github.com/Beserker-356/Digit_app/assets/141203631/ef9e3a1a-559e-4bb0-ac35-7adba5c3d955)
+
+<p>4. Go to services.</p>
+
+![Screenshot from 2024-03-25 23-13-33](https://github.com/Beserker-356/Digit_app/assets/141203631/3ece6eb8-0258-4acf-a1ab-e6e48f9068c4)
 
 
 <p>Citizen has the following services:</p> 
