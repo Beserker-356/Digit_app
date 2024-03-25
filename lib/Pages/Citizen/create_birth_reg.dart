@@ -36,7 +36,7 @@ class _Birth_RegState extends State<Birth_Reg> {
           ),
         ],
         iconTheme: const IconThemeData(color: Colors.white),
-        backgroundColor: const Color.fromARGB(255, 34, 28, 88),
+        backgroundColor: const Color.fromARGB(255, 51, 51, 51),
       ),
       body: Stack(
         children: [
@@ -45,23 +45,24 @@ class _Birth_RegState extends State<Birth_Reg> {
               image: DecorationImage(
                 image: AssetImage("lib/Images/gt2.jpeg"),
                 fit: BoxFit.cover,
+                opacity: 0.7,
               ),
             ),
           ),
           Center(
             child: Padding(
-              padding: const EdgeInsets.only(top: 60, left: 40, right: 40),
+              padding: const EdgeInsets.all(40),
               child: ListView(
                 children: [
                   Container(
-                    width: 400,
+                    width: 300,
                     height: 70,
                     decoration: const BoxDecoration(
                       borderRadius: BorderRadius.only(
                         topLeft: Radius.circular(20),
                         topRight: Radius.circular(20),
                       ),
-                      color: Color.fromARGB(255, 34, 28, 88),
+                      color: Color.fromARGB(255, 51, 51, 51),
                     ),
                     child: const Center(
                       child: Text(
@@ -75,7 +76,7 @@ class _Birth_RegState extends State<Birth_Reg> {
                     ),
                   ),
                   Container(
-                    width: 400,
+                    width: 300,
                     height: 550,
                     decoration: const BoxDecoration(
                       borderRadius: BorderRadius.only(
@@ -85,7 +86,7 @@ class _Birth_RegState extends State<Birth_Reg> {
                       color: Color.fromARGB(200, 255, 255, 255),
                       boxShadow: [
                         BoxShadow(
-                          color: Color.fromARGB(120, 0, 0, 0),
+                          color: Color.fromARGB(70, 0, 0, 0),
                           blurRadius: 15.0,
                           offset: Offset(5.0, 5.0),
                         ),
@@ -99,11 +100,9 @@ class _Birth_RegState extends State<Birth_Reg> {
                           const Text(
                             "Enter the following birth details : ",
                             style: TextStyle(
-                              fontSize: 20,
-                              fontWeight: FontWeight.bold,
+                              fontSize: 18,
                             ),
                           ),
-                          const SizedBox(height: 10.0),
                           const Row(
                             crossAxisAlignment: CrossAxisAlignment.end,
                             children: [
@@ -255,7 +254,7 @@ class _Birth_RegState extends State<Birth_Reg> {
                             ],
                           ),
                           const SizedBox(
-                            height: 70,
+                            height: 30,
                           ),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.end,

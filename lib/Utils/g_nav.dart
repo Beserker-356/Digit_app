@@ -9,15 +9,15 @@ class G_Nav extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.symmetric(vertical: 20),
+      padding: EdgeInsets.symmetric(vertical: 10),
       child: GNav(
           color: Colors.grey,
-          activeColor: const Color.fromARGB(255, 34, 28, 88),
+          activeColor: const Color.fromARGB(255, 51, 51, 51),
           tabActiveBorder:
-              Border.all(color: const Color.fromARGB(255, 34, 28, 88)),
-          tabBackgroundColor: Colors.white,
+              Border.all(color: const Color.fromARGB(255, 51, 51, 51)),
+          tabBackgroundColor: Color.fromARGB(255, 218, 218, 218),
           mainAxisAlignment: MainAxisAlignment.center,
-          tabBorderRadius: 20,
+          tabBorderRadius: 40,
           onTabChange: (value) => onTabChange!(value),
           tabs: const [
             GButton(

@@ -21,7 +21,7 @@ class Citizen_Services extends StatelessWidget {
           ),
         ],
         iconTheme: const IconThemeData(color: Colors.white),
-        backgroundColor: const Color.fromARGB(255, 34, 28, 88),
+        backgroundColor: const Color.fromARGB(255, 51, 51, 51),
         automaticallyImplyLeading: false,
       ),
       body: Stack(
@@ -32,6 +32,7 @@ class Citizen_Services extends StatelessWidget {
               image: DecorationImage(
                 image: AssetImage("lib/Images/gt2.jpeg"),
                 fit: BoxFit.cover,
+                opacity: 0.7,
               ),
             ),
           ),
@@ -39,14 +40,14 @@ class Citizen_Services extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Container(
-                width: 400,
+                width: 300,
                 height: 50,
                 decoration: const BoxDecoration(
                   borderRadius: BorderRadius.only(
                     topLeft: Radius.circular(20),
                     topRight: Radius.circular(20),
                   ),
-                  color: Color.fromARGB(255, 34, 28, 88),
+                  color: Color.fromARGB(255, 51, 51, 51),
                 ),
                 child: const Center(
                   child: Text(
@@ -60,7 +61,7 @@ class Citizen_Services extends StatelessWidget {
                 ),
               ),
               Container(
-                width: 400,
+                width: 300,
                 height: 500,
                 decoration: const BoxDecoration(
                   color: Color.fromARGB(200, 255, 255, 255),
@@ -70,20 +71,27 @@ class Citizen_Services extends StatelessWidget {
                   ),
                   boxShadow: [
                     BoxShadow(
-                      color: Color.fromARGB(120, 0, 0, 0),
+                      color: Color.fromARGB(70, 0, 0, 0),
                       blurRadius: 15.0,
                       offset: Offset(5.0, 5.0),
                     ),
                   ],
                 ),
                 child: Padding(
-                  padding: const EdgeInsets.all(40.0),
+                  padding: const EdgeInsets.all(20.0),
                   child: Column(
                     children: [
                       Container(
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(20),
                           color: Colors.white,
+                          boxShadow: [
+                            BoxShadow(
+                              color: Color.fromARGB(70, 41, 41, 41),
+                              blurRadius: 5.0,
+                              offset: Offset(5.0, 5.0),
+                            ),
+                          ],
                         ),
                         width: 300,
                         height: 50,
@@ -91,14 +99,17 @@ class Citizen_Services extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             Padding(
-                              padding: const EdgeInsets.all(10.0),
+                              padding: const EdgeInsets.all(5.0),
                               child: Text(
                                 "Birth Registration",
-                                style: TextStyle(fontSize: 18),
+                                style: TextStyle(fontSize: 16),
                               ),
                             ),
                             IconButton(
-                              icon: Icon(Icons.arrow_forward_ios),
+                              icon: Icon(
+                                Icons.arrow_forward_ios,
+                                size: 16,
+                              ),
                               onPressed: () {
                                 Navigator.push(
                                   context,
@@ -117,6 +128,13 @@ class Citizen_Services extends StatelessWidget {
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(20),
                           color: Colors.white,
+                          boxShadow: [
+                            BoxShadow(
+                              color: Color.fromARGB(70, 41, 41, 41),
+                              blurRadius: 5.0,
+                              offset: Offset(5.0, 5.0),
+                            ),
+                          ],
                         ),
                         width: 300,
                         height: 50,
@@ -124,39 +142,25 @@ class Citizen_Services extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             Padding(
-                              padding: const EdgeInsets.all(10.0),
+                              padding: const EdgeInsets.all(5.0),
                               child: Text(
                                 "Download Birth Certificate",
-                                style: TextStyle(fontSize: 18),
+                                style: TextStyle(fontSize: 16),
+                                softWrap: true,
                               ),
                             ),
                             IconButton(
-                              icon: Icon(Icons.arrow_forward_ios),
+                              icon: Icon(
+                                Icons.arrow_forward_ios,
+                                size: 16,
+                              ),
                               onPressed: () {
-                                Future<void> _downloadBirthCertificate() async {
-                                  final storageStatus =
-                                      await Permission.storage.request();
-                                  if (!storageStatus.isGranted) {
-                                    ScaffoldMessenger.of(context).showSnackBar(
-                                      const SnackBar(
-                                        content: Text(
-                                            "Storage permission is required to download!"),
-                                      ),
-                                    );
-                                    return;
-                                  }
-
-                                  FileDownloader.downloadFile(
-                                    url:
-                                        "https://drive.google.com/file/d/1aMjqWxBxCTLRvIK8KQbpPXIC_8UMF4-V/view?usp=drive_link",
-                                  );
-                                  ScaffoldMessenger.of(context).showSnackBar(
-                                    const SnackBar(
-                                      content: Text(
-                                          "Birth Certificate dowloaded in Downloads folder!"),
-                                    ),
-                                  );
-                                }
+                                ScaffoldMessenger.of(context).showSnackBar(
+                                  const SnackBar(
+                                    content: Text(
+                                        "Birth Certificate dowloaded successfully!"),
+                                  ),
+                                );
                               },
                             )
                           ],

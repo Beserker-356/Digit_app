@@ -1,4 +1,5 @@
 import "package:digit_app/Pages/Citizen/c_home.dart";
+import "package:digit_app/Pages/Citizen/citizen_home.dart";
 import "package:digit_app/Pages/Citizen/citizen_login.dart";
 import "package:digit_app/Utils/my_buttons.dart";
 import "package:flutter/material.dart";
@@ -17,78 +18,64 @@ class _OTPState extends State<OTP> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text(
-          "   Punjab | Amritsar",
-          style: TextStyle(color: Colors.white, fontSize: 16),
-        ),
-        actions: [
-          IconButton(
-            icon: const Icon(Icons.notifications),
-            onPressed: () {},
-          ),
-        ],
-        iconTheme: const IconThemeData(color: Colors.white),
-        backgroundColor: const Color.fromARGB(255, 34, 28, 88),
-        automaticallyImplyLeading: false,
-      ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            Image.asset("lib/Images/mseva-punjab-logo.jpg"),
             Container(
               width: 300,
-              height: 50,
-              decoration: const BoxDecoration(
-                borderRadius: BorderRadius.only(
-                  topLeft: Radius.circular(20),
-                  topRight: Radius.circular(20),
-                ),
-                color: Color.fromARGB(255, 34, 28, 88),
-              ),
-              child: const Center(
-                child: Text(
-                  "Verify your OTP",
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 20,
-                  ),
-                ),
-              ),
-            ),
-            Container(
-              width: 300,
-              height: 200,
-              decoration: const BoxDecoration(
-                borderRadius: BorderRadius.only(
-                  bottomLeft: Radius.circular(20),
-                  bottomRight: Radius.circular(20),
-                ),
-                color: Colors.white,
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.black,
-                    blurRadius: 15.0,
-                    offset: Offset(5.0, 5.0),
-                  ),
-                ],
-              ),
+              height: 350,
               child: Padding(
                 padding: const EdgeInsets.all(20.0),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     const Text(
-                      "Enter your OTP: ",
+                        "All the communications regarding the app will be sent to this number."),
+                    const SizedBox(
+                      height: 10,
+                    ),
+                    const Text(
+                      "Verify your OTP: ",
                       style: TextStyle(
-                        fontSize: 18,
+                        fontSize: 20,
                       ),
                     ),
-                    TextField(
+                    const SizedBox(
+                      height: 10,
+                    ),
+                    TextFormField(
+                      decoration: const InputDecoration(
+                        hintText: "Enter your OTP",
+                        contentPadding: EdgeInsets.all(10),
+                        filled: true,
+                        fillColor: Color.fromARGB(255, 236, 236, 236),
+                        border: OutlineInputBorder(
+                          borderRadius: BorderRadius.all(Radius.circular(10)),
+                          borderSide: BorderSide.none,
+                        ),
+                      ),
+                      textAlign: TextAlign.start,
+                      keyboardType: TextInputType.phone,
+                      style: TextStyle(fontSize: 16),
                       onChanged: (value) => setState(() => _OTP = value),
                     ),
                     const SizedBox(
-                      height: 50,
+                      height: 10,
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.end,
+                      children: [
+                        Text(
+                          "Resend OTP?",
+                          style: TextStyle(
+                              color: Color.fromARGB(255, 31, 92, 223)),
+                        )
+                      ],
+                    ),
+                    const SizedBox(
+                      height: 20,
                     ),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.end,
@@ -103,11 +90,11 @@ class _OTPState extends State<OTP> {
                             );
                           },
                         ),
-                        const SizedBox(
+                        SizedBox(
                           width: 20,
                         ),
                         MyButton(
-                          text: "Submit",
+                          text: "Login",
                           onPressed: () {
                             if (_OTP == _registeredOTP) {
                               Navigator.push(
@@ -133,7 +120,6 @@ class _OTPState extends State<OTP> {
           ],
         ),
       ),
-      backgroundColor: Colors.grey,
     );
   }
 }

@@ -20,16 +20,17 @@ class Citizen_Home extends StatelessWidget {
           ),
         ],
         iconTheme: const IconThemeData(color: Colors.white),
-        backgroundColor: const Color.fromARGB(255, 34, 28, 88),
+        backgroundColor: const Color.fromARGB(255, 51, 51, 51),
         automaticallyImplyLeading: false,
       ),
       body: Stack(
         children: [
           Container(
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               image: DecorationImage(
                 image: AssetImage("lib/Images/gt2.jpeg"),
                 fit: BoxFit.cover,
+                opacity: 0.7,
               ),
             ),
           ),
@@ -37,45 +38,43 @@ class Citizen_Home extends StatelessWidget {
             children: [
               Container(
                 margin: EdgeInsets.all(60),
-                decoration: BoxDecoration(
-                  boxShadow: [
-                    BoxShadow(
-                      color: Color.fromARGB(255, 51, 51, 51),
-                      blurRadius: 50,
-                      offset: Offset(5.0, 5.0),
-                    )
-                  ],
-                ),
                 child: TextField(
                   decoration: InputDecoration(
                     hintText: "Search here",
                     filled: true,
                     fillColor: Color.fromARGB(255, 255, 255, 255),
                     contentPadding: EdgeInsets.all(15),
-                    prefixIcon: IconButton(
+                    suffixIcon: IconButton(
                       onPressed: () {},
-                      icon: Icon(
+                      icon: const Icon(
                         Icons.search,
                         size: 30,
-                        color: const Color.fromARGB(255, 34, 28, 88),
+                        color: Color.fromARGB(255, 129, 129, 129),
                       ),
                     ),
                     border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(30),
+                      borderRadius: BorderRadius.circular(20),
                       borderSide: BorderSide.none,
                     ),
                   ),
                 ),
               ),
               const SizedBox(
-                height: 100,
+                height: 50,
               ),
               Container(
-                width: 400,
+                width: 300,
                 height: 300,
                 decoration: BoxDecoration(
                   color: const Color.fromARGB(200, 255, 255, 255),
                   borderRadius: BorderRadius.circular(20),
+                  boxShadow: [
+                    BoxShadow(
+                      color: Color.fromARGB(70, 41, 41, 41),
+                      blurRadius: 5.0,
+                      offset: Offset(5.0, 5.0),
+                    ),
+                  ],
                 ),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -95,15 +94,10 @@ class Citizen_Home extends StatelessWidget {
                             IconButton(
                               onPressed: () {},
                               icon: Container(
-                                padding: const EdgeInsets.all(10.0),
-                                decoration: BoxDecoration(
-                                  color: const Color.fromARGB(255, 34, 28, 88),
-                                  borderRadius: BorderRadius.circular(30),
-                                ),
                                 child: const Icon(
-                                  Icons.home,
-                                  color: Colors.white,
-                                  size: 30,
+                                  Icons.home_work,
+                                  color: Color.fromARGB(255, 22, 26, 29),
+                                  size: 40,
                                 ),
                               ),
                             ),
@@ -118,15 +112,10 @@ class Citizen_Home extends StatelessWidget {
                             IconButton(
                               onPressed: () {},
                               icon: Container(
-                                padding: const EdgeInsets.all(10.0),
-                                decoration: BoxDecoration(
-                                  color: const Color.fromARGB(255, 34, 28, 88),
-                                  borderRadius: BorderRadius.circular(30),
-                                ),
                                 child: const Icon(
                                   Icons.calendar_month_outlined,
-                                  color: Colors.white,
-                                  size: 30,
+                                  color: Color.fromARGB(255, 22, 26, 29),
+                                  size: 40,
                                 ),
                               ),
                             ),
@@ -146,15 +135,10 @@ class Citizen_Home extends StatelessWidget {
                             IconButton(
                               onPressed: () {},
                               icon: Container(
-                                padding: const EdgeInsets.all(10.0),
-                                decoration: BoxDecoration(
-                                  color: const Color.fromARGB(255, 34, 28, 88),
-                                  borderRadius: BorderRadius.circular(30),
-                                ),
                                 child: const Icon(
                                   Icons.folder,
-                                  color: Colors.white,
-                                  size: 30,
+                                  color: Color.fromARGB(255, 22, 26, 29),
+                                  size: 40,
                                 ),
                               ),
                             ),
@@ -169,15 +153,10 @@ class Citizen_Home extends StatelessWidget {
                             IconButton(
                               onPressed: () {},
                               icon: Container(
-                                padding: const EdgeInsets.all(10.0),
-                                decoration: BoxDecoration(
-                                  color: const Color.fromARGB(255, 34, 28, 88),
-                                  borderRadius: BorderRadius.circular(30),
-                                ),
                                 child: const Icon(
                                   Icons.edit_document,
-                                  color: Colors.white,
-                                  size: 30,
+                                  color: Color.fromARGB(255, 22, 26, 29),
+                                  size: 40,
                                 ),
                               ),
                             ),

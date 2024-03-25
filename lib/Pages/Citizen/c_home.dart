@@ -32,7 +32,7 @@ class _C_HomeState extends State<C_Home> {
       bottomNavigationBar: G_Nav(
         onTabChange: (index) => nav_bottom(index),
       ),
-      backgroundColor: const Color.fromARGB(255, 34, 28, 88),
+      backgroundColor: Color.fromARGB(255, 51, 51, 51),
     );
   }
 }

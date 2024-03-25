@@ -12,7 +12,7 @@ class MyButton extends StatelessWidget {
       style: ElevatedButton.styleFrom(
         shadowColor: Colors.black,
         elevation: 5,
-        backgroundColor: Color.fromARGB(255, 34, 28, 88),
+        backgroundColor: Color.fromARGB(255, 51, 51, 51),
       ),
       child: Text(
         text,
