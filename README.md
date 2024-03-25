@@ -15,6 +15,7 @@
 </ul>
 
 <h2>Funtionalities</h2>
+<p>Select the party you want to be added as. You have 2 options Citizen and Employee</p>
 
 <h3>Citizen</h3>
 
