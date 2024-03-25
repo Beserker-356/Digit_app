@@ -52,7 +52,7 @@
 
 <p>6. You can also download your birth certificate.</p>
 
-![Screenshot from 2024-03-25 23-17-38](https://github.com/Beserker-356/Digit_app/assets/141203631/a00510f9-0b5a-40e8-a927-8faab6612a1d)
+![Screenshot from 2024-03-25 23-19-09](https://github.com/Beserker-356/Digit_app/assets/141203631/8b5527dd-cdbf-43e6-b766-bb6fc27f14fe)
 
 <h3>Employee</h3>
 
@@ -60,3 +60,12 @@
 <ul>
   <li>Login using username and password</li>
 </ul>
+
+<p>1. Enter any username and password in the input field.</p>
+
+![Screenshot from 2024-03-25 23-20-51](https://github.com/Beserker-356/Digit_app/assets/141203631/be3cc191-24ab-484a-95b7-d5643aa0304a)
+
+<p>2. You will be redirected to Employee Home page</p>
+
+![Screenshot from 2024-03-25 23-21-43](https://github.com/Beserker-356/Digit_app/assets/141203631/374ab753-a3e7-4cec-b92c-57b28a4ac672)
+
