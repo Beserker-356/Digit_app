@@ -21,13 +21,13 @@
 ![Screenshot from 2024-03-25 23-04-35](https://github.com/Beserker-356/Digit_app/assets/141203631/76505459-8725-40b5-96e3-3a1715759dfb)
 
 
-<h3>Citizen</h3>
+<h3>For Citizen: </h3>
 
-<p>Enter any 10 digit number in the input field.</p>
+<p>1. Enter any 10 digit number in the input field.</p>
 
 ![Screenshot from 2024-03-25 23-06-08](https://github.com/Beserker-356/Digit_app/assets/141203631/144f18fd-1abc-4893-8073-ee52e5a2ee64)
 
-<p>Now, enter "1111" as OTP in the next page.</p>
+<p>2. Now, enter "1111" as OTP in the next page.</p>
 
 ![Screenshot from 2024-03-25 23-06-21](https://github.com/Beserker-356/Digit_app/assets/141203631/6f37ff39-93e1-4768-8a11-b605c1a7df94)
 
