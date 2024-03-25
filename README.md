@@ -15,7 +15,10 @@
 </ul>
 
 <h2>Funtionalities</h2>
-<p>Select the party you want to be added as. You have 2 options Citizen and Employee</p>
+<p>Select the party you want to be added as. You have 2 options Citizen and Employee.</p>
+
+![Screenshot from 2024-03-25 23-04-35](https://github.com/Beserker-356/Digit_app/assets/141203631/76505459-8725-40b5-96e3-3a1715759dfb)
+
 
 <h3>Citizen</h3>
 
