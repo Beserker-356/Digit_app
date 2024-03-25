@@ -2,11 +2,9 @@
 
 <p>Welcome to the Digit App! this application is designed to help users efficiently manage their documents, surveys, and important events, all in one convenient platform. Built using Flutter, this app offers a seamless user experience across both Android and iOS devices.</p>
 
-<p></p>
+<p>This app has both Citizen and Employee UI which can later be differentiated and can be developed into 2 different apps serving both the parties.</p>
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
 
 A few resources to get you started if this is your first Flutter project:
 
