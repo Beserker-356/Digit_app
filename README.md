@@ -1,6 +1,8 @@
-# digit_app
+<h1>Digit App</h1>
 
-A new Flutter project.
+<p>Welcome to the Digit App! this application is designed to help users efficiently manage their documents, surveys, and important events, all in one convenient platform. Built using Flutter, this app offers a seamless user experience across both Android and iOS devices.</p>
+
+<p></p>
 
 ## Getting Started
 
